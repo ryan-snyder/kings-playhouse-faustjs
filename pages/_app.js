@@ -9,8 +9,8 @@ export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   return (
-    <FaustProvider pageProps={pageProps}>
-      <Component {...pageProps} key={router.asPath} />
-    </FaustProvider>
+      <FaustProvider pageProps={pageProps}>
+        <Component {...pageProps} key={router.asPath} />
+      </FaustProvider>
   );
 }
